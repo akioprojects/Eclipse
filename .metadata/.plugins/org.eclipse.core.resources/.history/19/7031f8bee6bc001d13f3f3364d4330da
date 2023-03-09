@@ -1,0 +1,25 @@
+package pack1;
+import java.util.*;
+import java.text.DecimalFormat;
+ 
+public class CurrencyConverter
+{
+   public static void main(String[] args)
+   {
+      double amount;
+      double dollar,euro;
+ 
+      DecimalFormat f = new DecimalFormat("##.##");
+ 
+      Scanner sc = new Scanner(System.in);
+ 
+      System.out.println("Enter the amount you want to convert?");
+      amount = sc.nextFloat();
+
+      // Dollar Conversion
+            euro = amount *0.87;
+            System.out.println(amount + " Dollar = " + f.format(euro) + " Euro");
+          //Default case
+//            System.out.println("Invalid Input");
+      }
+   }

@@ -1,0 +1,10 @@
+package week7.code;
+
+public class ExceptionsPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

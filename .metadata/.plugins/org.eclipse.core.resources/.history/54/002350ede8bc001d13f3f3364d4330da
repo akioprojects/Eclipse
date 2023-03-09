@@ -1,0 +1,16 @@
+package pack1;
+import junit.framework.TestCase;
+
+public class ConvertBetweenCurrenciesTest extends TestCase {
+	
+//	#TestCase1
+//	#Test Objective
+//	#Test Type (UAT or JUnit)
+//	#Input(s)
+//	#Expected Output(s)
+//	Test Procedure (for UAT)
+
+
+
+	
+}

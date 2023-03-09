@@ -1,0 +1,48 @@
+package currencycon;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.io.PrintStream;
+import java.util.Scanner;
+import java.io.FileOutputStream;
+import java.io.IOException;
+public class ConvertBetweenCurrencies {
+	
+	// Partial Product Skeleton Code
+	   public static void main(String[] args) {
+		   convertCurrency();
+	   }
+
+	private static void convertCurrency() {
+		
+		
+	}
+
+	double convertCurrency (double exchangeRate, double amountUSD ) {
+		
+		double amount;
+		double dollar,euro;
+	 
+	      DecimalFormat f = new DecimalFormat("##.##");
+	 
+	      Scanner sc = new Scanner(System.in);
+	      System.out.println("Welcome to Dollars Currency Converter!");
+	      System.out.println("Enter the amount of Dollars you want to convert?: ");
+	      amount = sc.nextFloat();
+
+	      // Dollar Conversion
+	            euro = amount *0.87;
+	            System.out.println(amount + " Dollar = " + f.format(euro) + " Euro");
+	          //Default case
+//	            System.out.println("Invalid Input");
+		// This method converts US dollar values to Euro values based on the 
+		// current exchange rate between U.S. dollars and and the Euro.
+		// On successful conversion, the Euro amount is returned.
+		
+		// Additional Requirement - Define your own exception handler to
+		// handle any invalid values.
+		
+//		throw new Exce
+		
+	}
+	
+}

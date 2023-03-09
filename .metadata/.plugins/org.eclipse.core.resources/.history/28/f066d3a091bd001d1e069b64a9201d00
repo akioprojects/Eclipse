@@ -1,0 +1,24 @@
+package currencycon;
+
+public class CurrencyConvertor {
+	
+	public class ConvertBetweenCurrencies {
+		
+		// Partial Product Skeleton Code
+		
+		double convertCurrency (double exchangeRate, double amountUSD ) {
+			
+			// This method converts US dollar values to Euro values based on the 
+			// current exchange rate between U.S. dollars and and the Euro.
+			// On successful conversion, the Euro amount is returned.
+			
+			// Additional Requirement - Define your own exception handler to
+			// handle any invalid values.
+			
+			throw new RuntimeException("Product code not yet written");
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+Working in pairs - 
+
+1.      Create a new team repository (global/local).
+
+2.      Create a new Java Project.
+
+3.      Add the above product skeleton class to the project. Modify project/product skeleton to include a User Defined Exception Handler.
+
+4.      Design Equivalence Partition/BVA tests for both methods. 100% EP and BVA coverage must be achieved.
+
+5.      Create a corresponding Test Class.
+
+6.      Write the corresponding JUnit tests.
+
+7.      Run the JUnit tests so that they fail.
+
+8.      Show your work to your tutor.
+
+9.      Write Product Code.
+
+10.    Run Tests until all tests pass.

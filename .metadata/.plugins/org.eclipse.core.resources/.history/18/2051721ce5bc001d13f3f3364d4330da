@@ -1,0 +1,64 @@
+package pack1;
+import java.math.BigDecimal;
+import java.io.PrintStream;
+import java.util.Scanner;
+import java.io.FileOutputStream;
+import java.io.IOException;
+public class ConvertBetweenCurrencies {
+	private static final BigDecimal FIVE = new BigDecimal("5");
+    private static final BigDecimal TEN = new BigDecimal("10");
+    private static final BigDecimal TWENTY = new BigDecimal("20");
+    private static final BigDecimal ONE_HUNDRED = new BigDecimal("100");
+	// Partial Product Skeleton Code
+    public static void main(String[] args) throws IOException {
+
+        System.out.print("Please enter USD withdrawal amount: ");
+        Scanner user = new Scanner(System.in);
+        BigDecimal usdTotal = user.nextBigDecimal();
+        BigDecimal euroTotal = usdTotal.multiply(new BigDecimal("1.13")).setScale(2, BigDecimal.ROUND_HALF_UP);
+
+        calculateNotes(usdTotal, "USD");
+        calculateNotes(euroTotal, "EURO");
+
+        user.close();
+
+        PrintStream output = new PrintStream("euro.txt");
+        System.setOut(output);
+
+    }
+
+    private static void calculateNotes(BigDecimal total, String currency) {
+        BigDecimal bills20 = total.divide(TWENTY, 0, BigDecimal.ROUND_DOWN);
+
+        BigDecimal remainder10 = total.remainder(TWENTY);
+        BigDecimal bills10 = remainder10.divide(TEN, 0, BigDecimal.ROUND_DOWN);
+
+        BigDecimal bills5 = remainder10.subtract(bills10.multiply(TEN)).divide(FIVE, 0, BigDecimal.ROUND_DOWN);
+        BigDecimal remainder5 = remainder10.remainder(FIVE.setScale(0, BigDecimal.ROUND_DOWN));
+
+        BigDecimal bills1 = (remainder5.setScale(0, BigDecimal.ROUND_DOWN));
+        BigDecimal cents = total.setScale(2, BigDecimal.ROUND_DOWN).subtract(total.setScale(0, BigDecimal.ROUND_DOWN))
+                .multiply(ONE_HUNDRED);
+
+        System.out.println("CURRENCY : " + currency);
+        System.out.println("Twenty Dollar Bills: " + bills20);
+        System.out.println("Ten Dollar Bills: " + bills10);
+        System.out.println("Five Dollar Bills: " + bills5);
+        System.out.println("One Dollar Bills: " + bills1);
+        System.out.println("Cents: " + cents.toBigInteger() + "\n");
+    }
+	double convertCurrency (double exchangeRate, double amountUSD ) {
+		System.out.println("Dollars to euro");
+		
+		// This method converts US dollar values to Euro values based on the 
+		// current exchange rate between U.S. dollars and and the Euro.
+		// On successful conversion, the Euro amount is returned.
+		
+		// Additional Requirement - Define your own exception handler to
+		// handle any invalid values.
+		
+		throw new RuntimeException("Product code not yet written");
+		
+	}
+	
+}

@@ -1,0 +1,56 @@
+package week7.code;
+
+import java.io.IOException;
+
+public class ExceptionsPractice {
+
+	public static void main(String[] args) {
+		try {
+			a();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		b1();
+		try {
+			c1();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public static void a () throws IOException {
+	}
+	public static void b1() {
+		try {
+			b2();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		d1();
+		
+	}
+	public static void b2() throws IOException {
+	}
+	public static void c1() throws IOException {
+		c2();
+	}
+	public static void c2() {
+	}
+	public static void d1() {
+		try {
+			d2();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public static void d2() throws ClassNotFoundException {
+	}
+	testMethodD(){
+		return String;
+	}
+}

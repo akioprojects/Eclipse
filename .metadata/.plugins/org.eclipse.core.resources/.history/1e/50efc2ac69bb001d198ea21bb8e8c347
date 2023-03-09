@@ -1,0 +1,35 @@
+/*
+ 	In this java program i will declare and initialize variables
+ 	of diffrent types of data types and print values out to the screen.
+ */
+
+package package1;
+
+public class MyVariables {
+	public static void main(String[] args) {
+	// declaring and initializing variables
+		int myInteger = 30;
+		byte myByte = 120;
+		short myShort = 32000;
+		double myLong = 10000000000L;
+		
+		// hello this is a test 
+		
+		
+		
+	//Non-whole numbers
+		float myFloat = 3.147F;
+		double myDouble = 3134.6363636d;
+		
+	System.out.println("new printasda");
+	
+	// printing values to the screen 
+	System.out.println("The value of my interger is " + myInteger);
+	System.out.println("The value of my byte is " + myByte);
+	System.out.println("The value of my short is " + myShort);
+	System.out.println("The value of my long is " + myLong);
+	System.out.println("The value of my float is " + myFloat);
+	System.out.println("The value of my double is " + myDouble);
+	}
+
+}

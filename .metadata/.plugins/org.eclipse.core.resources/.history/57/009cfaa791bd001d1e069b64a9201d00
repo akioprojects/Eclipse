@@ -1,0 +1,15 @@
+package currencycon;
+
+public class ConvertBetweenCurrenciesExceptionHandler {
+	
+	String message;
+	
+	public ConvertBetweenCurrenciesExceptionHandler(String errMessage){
+		message = errMessage;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+
+}

@@ -1,0 +1,22 @@
+package currencycon;
+import junit.framework.TestCase;
+
+public class ConvertBetweenCurrenciesTest extends TestCase {
+	
+//	#Test#1
+//	#Objective:	Invalid < 0
+//	#Input(s): ammount = -25
+//	#Expected Output(s: Expectationthrown with message "Invalid ammount can't be converted,Please Try Again"
+//	Test Procedure (for UAT)
+	public void testvalidateCurency001(){
+		ConvertBetweenCurrencies testObj = new ConvertBetweenCurrencies();
+		
+		try {
+			
+			boolean actualResult = testObj.
+		}
+	}
+		
+
+	
+}
